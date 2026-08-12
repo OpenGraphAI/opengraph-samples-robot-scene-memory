@@ -1,11 +1,57 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
+*.py[codz]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test, coverage, and type-checker output
+.cache/
+.coverage
+.coverage.*
+.hypothesis/
+.mypy_cache/
 .pytest_cache/
-.venv/
-venv/
+.ruff_cache/
+htmlcov/
+.nox/
+.tox/
+
+# Python environments and local configuration
 .env
+.envrc
+.venv/
+env/
+venv/
+ENV/
+
+# Notebooks and editor scratch files
+.ipynb_checkpoints/
+tempCodeRunnerFile.py
 
 # macOS
 .DS_Store
-
+.localized
+__MACOSX/
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.com.apple.timemachine.supported
+.AppleDB
+.AppleDesktop
+.apdisk
+Network Trash Folder
+Temporary Items
