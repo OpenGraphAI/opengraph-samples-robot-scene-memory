@@ -1,1 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robot Scene Memory | OpenGraph AI</title>
+  <meta name="description" content="A static gallery showing how OpenGraph AI turns robot workspace observations into an explorable scene memory.">
+  <meta name="theme-color" content="#020202">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Robot Scene Memory | OpenGraph AI">
+  <meta property="og:description" content="Explore a read-only scene graph built from robot workspace observations with OpenGraph AI.">
+  <meta property="og:image" content="assets/og-preview.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Robot Scene Memory home">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span>Open<span>Graph</span> AI</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#example">Example</a>
+        <a href="#install">Install MCP</a>
+        <a class="nav-action" href="https://github.com/OpenGraphAI/opengraph-samples-robot-scene-memory">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> opengraph-image · static gallery</p>
+        <h1 id="hero-title">A <em>scene memory</em> for robot workspaces.</h1>
+        <p class="hero-lede">OpenGraph AI turns robot-camera observations into a read-only graph of objects, scenes, attributes, and spatial relationships.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#example">Explore the example <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/OpenGraphAI/opengraph-samples-robot-scene-memory">View source <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="memory-preview" aria-label="Example scene-memory structure">
+        <div class="preview-bar">
+          <span><i></i><i></i><i></i></span>
+          <code>scene_memory / observation_03</code>
+        </div>
+        <div class="preview-body">
+          <p><span class="node node-image"></span><b>observation_03</b></p>
+          <p class="level-1"><span class="branch">├─ contains</span><span class="node node-object"></span>robot_gripper</p>
+          <p class="level-2"><span class="branch">└─ holding</span><span class="node node-object"></span>red_block</p>
+          <p class="level-1"><span class="branch">├─ contains</span><span class="node node-object"></span>work_surface</p>
+          <p class="level-2"><span class="branch">└─ on_top_of</span><span class="node node-object"></span>blue_bowl</p>
+          <p class="level-1"><span class="branch">└─ in_scene</span><span class="node node-scene"></span>workspace</p>
+        </div>
+        <div class="preview-footer"><span>6 nodes</span><span>5 relationships</span><span>read only</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="example" aria-labelledby="example-title">
+      <div class="shell">
+        <p class="section-label">01 · Example</p>
+        <div class="section-heading">
+          <h2 id="example-title">Robot Scene Memory</h2>
+          <p>A compact visual memory built from selected BridgeData V2 observations—not a training pipeline or behavior model.</p>
+        </div>
+
+        <article class="example-card">
+          <div class="card-copy">
+            <p class="status"><span></span> Gallery scaffold ready</p>
+            <h3>Explore recurring objects across robot-camera observations.</h3>
+            <p>The finished gallery will show a fixed graph snapshot generated offline with <code>opengraph-image</code>. D3.js will provide read-only zooming, panning, filtering, and inspection in the browser.</p>
+            <a class="future-link" href="image/examples/robot-scene-memory/graph.html" aria-disabled="true" tabindex="-1">
+              Open graph gallery <span>Available after Phase 4</span>
+            </a>
+          </div>
+          <dl class="example-facts">
+            <div><dt>Input</dt><dd>Robot workspace observations</dd></div>
+            <div><dt>Source</dt><dd>BridgeData V2 · CC BY 4.0</dd></div>
+            <div><dt>Builder</dt><dd>opengraph-image</dd></div>
+            <div><dt>Viewer</dt><dd>Static HTML · D3.js</dd></div>
+            <div><dt>Runtime</dt><dd>None</dd></div>
+          </dl>
+        </article>
+
+        <p class="dataset-note">BridgeData supplies realistic observations for this example. OpenGraph AI does not train on the dataset; it organizes selected images into an explorable scene memory.</p>
+      </div>
+    </section>
+
+    <section class="section install-section" id="install" aria-labelledby="install-title">
+      <div class="shell install-grid">
+        <div>
+          <p class="section-label">02 · Install MCP</p>
+          <h2 id="install-title">Grow a graph through conversation.</h2>
+          <p>The gallery is a static snapshot. The MCP integration lets a compatible local client build and query graphs from your own images.</p>
+        </div>
+        <div class="install-placeholder" aria-label="MCP installation status">
+          <code>MCP configuration</code>
+          <p>Claude Desktop and Cursor configuration snippets arrive in Phase 5.</p>
+          <span>Documentation pending</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p>Robot Scene Memory · an OpenGraph AI sample</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/OpenGraphAI/opengraph-ai">OpenGraph AI</a>
+        <a href="https://github.com/OpenGraphAI/opengraph-samples-robot-scene-memory">Sample repository</a>
+        <a href="https://rail-berkeley.github.io/bridgedata/">BridgeData V2</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
