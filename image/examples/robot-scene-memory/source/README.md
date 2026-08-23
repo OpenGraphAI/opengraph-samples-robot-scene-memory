@@ -1,0 +1,24 @@
+# Source observations
+
+These eight images are terminal observations from four BridgeData V2 demonstrations in one folding-table workspace. Each demonstration contributes the matching `images0` and `images1` frame number, named here as view 0 and view 1. They are observations for a scene-memory example; this repository does not use them to train a model.
+
+BridgeData V2 is provided by the UC Berkeley RAIL project under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). Please also see the [BridgeData V2 project page](https://rail-berkeley.github.io/bridgedata/) and cite:
+
+> Homer Walke et al. “BridgeData V2: A Dataset for Robot Learning at Scale.” Conference on Robot Learning (CoRL), 2023.
+
+## Files
+
+| Local file | Demonstration | Original | Original SHA-256 | Local SHA-256 |
+| --- | --- | --- | --- | --- |
+| `fold_cloth_view_0.webp` | Fold cloth top-left to bottom-right | [`traj2/images0/im_38.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj2/images0/im_38.jpg) | `3dd27451c015293ce05374df2f817c092ad61609cb1b4ea8a35521e64a79fb6c` | `26c5af4bb55e59216cb14c117e7450c4771f2cad5027da7acd2321addaa6e2ed` |
+| `fold_cloth_view_1.webp` | Fold cloth top-left to bottom-right | [`traj2/images1/im_38.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj2/images1/im_38.jpg) | `530bfc4c627b9e947aa9ce5af8715bd9edb148fb462c5da2cf759708e02ece5b` | `eba9cfd45da0c86eae581d06780fd5cc840ec116c362518a8b918ca083ade380` |
+| `unfold_cloth_view_0.webp` | Unfold cloth top-left to bottom-right | [`traj5/images0/im_42.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj5/images0/im_42.jpg) | `84c3e5dbe4ec42d611cadfc0d1b034e5a03a77db5d79bb437e8957e352240f19` | `51e939d04c5d2428fa9281252cf0f6a0fa0f59fadb49bc1eb5ac3bb340cee836` |
+| `unfold_cloth_view_1.webp` | Unfold cloth top-left to bottom-right | [`traj5/images1/im_42.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj5/images1/im_42.jpg) | `2916b933968413cf8288dbd8a643f2624e186e2d30daed32992b2b1f0e944254` | `36dcc6ab0820e2259ff737678b68c016782682fbeb4919e3cd3f7e2c094b10fb` |
+| `move_cloth_top_view_0.webp` | Move cloth to the top side of the table | [`traj8/images0/im_48.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj8/images0/im_48.jpg) | `6bf7c57595521d10bb410c9881ce6cdc4d41044425a4907b7930fd6634a01384` | `1b6ae3edf4b9e7c1ad666a537290da4d4d8852b89c613f682be190d593c58f8a` |
+| `move_cloth_top_view_1.webp` | Move cloth to the top side of the table | [`traj8/images1/im_48.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj8/images1/im_48.jpg) | `2625e83954692749fd13c4dfcb97a02421655ff1355436321bafd7c71914a8b9` | `919551cfd1a02749e9a6ed3f5326caa2c34e90352f4d0b9b3668625b3c2ba47e` |
+| `tomato_on_cloth_view_0.webp` | Put the toy tomato on the cloth’s bottom-left | [`traj11/images0/im_35.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj11/images0/im_35.jpg) | `c7568fc66eb62973cd35f9a7373b909ae6db863751efcfa629e7a89f9898209b` | `40e3c9e5a6d0054e9268523a4aa4f15e015982a37cc8dce66472ca746ec136f0` |
+| `tomato_on_cloth_view_1.webp` | Put the toy tomato on the cloth’s bottom-left | [`traj11/images1/im_35.jpg`](https://rail.eecs.berkeley.edu/datasets/bridge_release/raw/bridge_data_v2/datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0/traj11/images1/im_35.jpg) | `5e5eb403f3b80803be313176430d95d9f9112237d9c0e9753bb5df208911dd33` | `42544e9fcc31f2e22c155fbb2247d309aabce5895a1db1a492febea7fc11a64b` |
+
+## Transformations
+
+The original 640 × 480 JPEGs were renamed and converted to RGB WebP at quality 82 with Pillow. Dimensions and framing were preserved; no cropping or content edits were applied. Every committed image is below 200 KB.
