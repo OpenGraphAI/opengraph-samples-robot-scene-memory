@@ -9,7 +9,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Robot Scene Memory | OpenGraph AI">
   <meta property="og:description" content="Explore a read-only scene graph built from robot workspace observations with OpenGraph AI.">
-  <meta property="og:image" content="assets/og-preview.png">
+  <meta property="og:url" content="https://opengraphai.github.io/opengraph-samples-robot-scene-memory/">
+  <meta property="og:image" content="https://opengraphai.github.io/opengraph-samples-robot-scene-memory/assets/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://opengraphai.github.io/opengraph-samples-robot-scene-memory/">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
@@ -91,17 +94,67 @@
     </section>
 
     <section class="section install-section" id="install" aria-labelledby="install-title">
-      <div class="shell install-grid">
-        <div>
-          <p class="section-label">02 · Install MCP</p>
+      <div class="shell">
+        <p class="section-label">02 · Install MCP</p>
+        <div class="install-heading">
           <h2 id="install-title">Grow a graph through conversation.</h2>
-          <p>The gallery is a static snapshot. The MCP integration lets a compatible local client build and query graphs from your own images.</p>
+          <p>The gallery is a static snapshot. The local MCP server lets a compatible client build and query newer graph snapshots from your own images. Install <a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a>, replace the key placeholder locally, then restart your client.</p>
         </div>
-        <div class="install-placeholder" aria-label="MCP installation status">
-          <code>MCP configuration</code>
-          <p>Claude Desktop and Cursor configuration snippets arrive in Phase 5.</p>
-          <span>Documentation pending</span>
+        <div class="config-grid">
+          <article class="config-card">
+            <div class="config-header">
+              <div>
+                <p class="config-kicker">Claude Desktop</p>
+                <h3>claude_desktop_config.json</h3>
+              </div>
+              <button class="copy-button" type="button" data-copy="claude-config">Copy</button>
+            </div>
+            <pre><code id="claude-config">{
+  "mcpServers": {
+    "opengraph-image": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "opengraph-image==0.1.2",
+        "opengraph-image-mcp"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY"
+      }
+    }
+  }
+}</code></pre>
+            <p class="config-note">Windows: <code>%APPDATA%\Claude\claude_desktop_config.json</code>. Fully quit and reopen Claude Desktop after saving.</p>
+          </article>
+
+          <article class="config-card">
+            <div class="config-header">
+              <div>
+                <p class="config-kicker">Cursor</p>
+                <h3>.cursor/mcp.json</h3>
+              </div>
+              <button class="copy-button" type="button" data-copy="cursor-config">Copy</button>
+            </div>
+            <pre><code id="cursor-config">{
+  "mcpServers": {
+    "opengraph-image": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "opengraph-image==0.1.2",
+        "opengraph-image-mcp"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY"
+      }
+    }
+  }
+}</code></pre>
+            <p class="config-note">Save as <code>.cursor/mcp.json</code> in a trusted project, then enable the server in Cursor’s MCP settings.</p>
+          </article>
         </div>
+        <p class="config-help">The key is required only when the MCP server extracts or queries a graph with Claude. Viewing this gallery never uses it. If the client cannot find <code>uvx</code>, replace it with the absolute path returned by <code>where uvx</code> on Windows or <code>which uvx</code> on macOS/Linux.</p>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
       </div>
     </section>
   </main>
@@ -116,5 +169,21 @@
       </nav>
     </div>
   </footer>
+  <script>
+    const copyStatus = document.getElementById("copy-status");
+    document.querySelectorAll("[data-copy]").forEach(button => {
+      button.addEventListener("click", async () => {
+        const source = document.getElementById(button.dataset.copy);
+        try {
+          await navigator.clipboard.writeText(source.textContent);
+          copyStatus.textContent = `${button.closest("article").querySelector(".config-kicker").textContent} configuration copied.`;
+          button.textContent = "Copied";
+          window.setTimeout(() => { button.textContent = "Copy"; }, 1800);
+        } catch (_error) {
+          copyStatus.textContent = "Copy was blocked. Select the configuration text and copy it manually.";
+        }
+      });
+    });
+  </script>
 </body>
 </html>

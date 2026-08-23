@@ -16,6 +16,8 @@ The first example is built from a small, attributed selection of BridgeData V2 o
 
 See the [OpenGraph AI repository](https://github.com/OpenGraphAI/opengraph-ai) for the graph-building tools and MCP integration.
 
+The landing page includes copy-ready Claude Desktop and Cursor configurations for the pinned `opengraph-image==0.1.2` MCP server. An Anthropic API key is required for local MCP extraction and query calls, but never for the static gallery.
+
 ## Rendering contract
 
 - `opengraph-image` produces the graph data offline from selected observations.

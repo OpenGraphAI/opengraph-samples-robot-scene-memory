@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -433,30 +434,112 @@ code {
   background: var(--surface);
 }
 
-.install-grid {
+.install-heading {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, .8fr);
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 2.5rem;
 }
 
-.install-grid h2 {
-  margin-bottom: 1.5rem;
+.install-heading h2 {
+  margin: 0;
 }
 
-.install-placeholder {
-  padding: 2rem;
+.install-heading > p:last-child,
+.config-help {
+  color: var(--body);
+}
+
+.install-heading a {
+  color: var(--gold);
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.config-card {
+  min-width: 0;
   border: 1px solid var(--border-strong);
   background: var(--bg);
 }
 
-.install-placeholder code {
-  color: var(--gold);
+.config-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.install-placeholder p {
-  margin: 2rem 0;
+.config-header h3 {
+  margin: .2rem 0 0;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+.config-kicker {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--mono);
+  font-size: .66rem;
+  text-transform: uppercase;
+}
+
+.copy-button {
+  padding: .5rem .8rem;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+  font: 700 .68rem var(--mono);
+  text-transform: uppercase;
+}
+
+.copy-button:hover {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.config-card pre {
+  max-height: 25rem;
+  margin: 0;
+  padding: 1.3rem;
+  overflow: auto;
+  color: var(--text);
+  font: .72rem/1.65 var(--mono);
+  tab-size: 2;
+}
+
+.config-note {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border-top: 1px solid var(--border);
   color: var(--body);
+  font-size: .78rem;
+}
+
+.config-note code,
+.config-help code {
+  color: var(--text);
+}
+
+.config-help {
+  max-width: 76rem;
+  margin: 1.5rem 0 0;
+  font-size: .82rem;
+}
+
+.copy-status {
+  min-height: 1.4rem;
+  margin: .6rem 0 0;
+  color: var(--gold);
+  font: .7rem var(--mono);
 }
 
 footer {
@@ -479,8 +562,13 @@ footer p {
   .hero,
   .section-heading,
   .example-card,
-  .install-grid {
+  .install-heading,
+  .config-grid {
     grid-template-columns: 1fr;
+  }
+
+  .install-heading {
+    gap: 1.5rem;
   }
 
   .hero {
@@ -535,7 +623,7 @@ footer p {
 
   .card-copy,
   .example-facts,
-  .install-placeholder {
+  .config-card pre {
     padding: 1.25rem;
   }
 
