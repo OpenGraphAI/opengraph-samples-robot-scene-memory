@@ -312,12 +312,19 @@ def write_atomic(path: Path, contents: str) -> None:
 
 def validate_html() -> None:
     html = GRAPH_HTML.read_text(encoding="utf-8")
+    template = TEMPLATE.read_text(encoding="utf-8")
     if "/*__D3_SOURCE__*/" in html or "__GRAPH_DATA__" in html:
         raise ValueError("graph.html contains an unreplaced template marker")
     if "https://cdn" in html:
         raise ValueError("graph.html must not depend on a D3 CDN")
     if "d3.drag" in html:
         raise ValueError("The read-only viewer must not enable node dragging")
+    for forbidden in ("forceSimulation", "contenteditable", "innerHTML"):
+        if forbidden in template:
+            raise ValueError(f"The read-only viewer template must not use {forbidden}")
+    for required in ('<meta name="description"', 'rel="canonical"', 'rel="icon"'):
+        if required not in html:
+            raise ValueError(f"graph.html is missing required metadata: {required}")
 
 
 def render_current_graph() -> tuple[int, int]:
