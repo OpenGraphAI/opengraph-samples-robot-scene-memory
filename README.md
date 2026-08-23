@@ -6,7 +6,7 @@ A static gallery showing how [OpenGraph AI](https://github.com/OpenGraphAI/openg
 
 The first example is built from a small, attributed selection of BridgeData V2 observations. Its 65-node, 148-edge graph is read-only and explorable; `opengraph-image` produced the source graph offline and D3.js renders its fixed positions in the browser.
 
-**Live demo:** Coming soon.
+**Live demo:** [opengraphai.github.io/opengraph-samples-robot-scene-memory](https://opengraphai.github.io/opengraph-samples-robot-scene-memory/)
 
 ## What this example demonstrates
 
