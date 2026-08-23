@@ -376,11 +376,14 @@ code {
   align-items: center;
   gap: 1rem;
   margin-top: 1.2rem;
-  color: var(--muted);
+  color: var(--gold);
   font-family: var(--mono);
   font-size: .78rem;
   text-decoration: none;
-  pointer-events: none;
+}
+
+.future-link:hover {
+  color: var(--text);
 }
 
 .future-link span,

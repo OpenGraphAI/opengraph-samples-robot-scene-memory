@@ -4,7 +4,7 @@ A static gallery showing how [OpenGraph AI](https://github.com/OpenGraphAI/openg
 
 ## Status
 
-The first example is being built from a small, attributed selection of BridgeData V2 observations. The published graph will be read-only and explorable; the source graph will be produced offline with `opengraph-image`.
+The first example is built from a small, attributed selection of BridgeData V2 observations. Its 65-node, 148-edge graph is read-only and explorable; `opengraph-image` produced the source graph offline and D3.js renders its fixed positions in the browser.
 
 **Live demo:** Coming soon.
 
@@ -25,4 +25,4 @@ See the [OpenGraph AI repository](https://github.com/OpenGraphAI/opengraph-ai) f
 
 ## Data source
 
-The source is [BridgeData V2](https://rail-berkeley.github.io/bridgedata/), published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The sample will use the terminal view 0/view 1 frame pairs from trajectories 2, 5, 8, and 11 in the public `datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0` session. Full attribution and any image transformations will be recorded alongside the Phase 4 artifacts.
+The source is [BridgeData V2](https://rail-berkeley.github.io/bridgedata/), published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The sample uses the terminal view 0/view 1 frame pairs from trajectories 2, 5, 8, and 11 in the public `datacol2_folding_table/fold_cloth_pnp/01/2023-05-19_12-20-29/raw/traj_group0` session. Exact source URLs, checksums, and attribution live beside the selected images.
