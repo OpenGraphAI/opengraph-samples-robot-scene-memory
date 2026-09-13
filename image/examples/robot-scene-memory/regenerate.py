@@ -34,7 +34,7 @@ GENERATOR_VERSION = "0.1.2"
 SPATIAL_RELATIONS = {"next_to", "holding", "wearing", "on_top_of", "inside", "behind", "in_front_of"}
 OBJECT_ALIASES = {
     "yellow_cloth": {"yellow_cloth", "microfiber_cloth", "yellow_microfiber_cloth", "yellow_towel"},
-    "robot_gripper": {"robotic_arm", "robotic_arm_gripper", "robotic_gripper"},
+    "robot_gripper": {"robot_gripper", "robotic_arm", "robotic_arm_gripper", "robotic_gripper"},
     "toy_banana": {"toy_banana", "banana_toy", "balloon", "toy_pear"},
     "toy_strawberry": {"toy_strawberry", "strawberry_toy"},
     "sandwich_toy": {"toy_bread", "sponge", "striped_roll_toy", "polishing_pad", "sandwich_toy", "toy_food_item"},

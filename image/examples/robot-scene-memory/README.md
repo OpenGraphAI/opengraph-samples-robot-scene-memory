@@ -1,11 +1,11 @@
 # Robot Scene Memory graph
 
-This example treats eight robot-camera observations as a compact scene memory. It is not a training dataset or behavior model. `opengraph-image` extracts objects, scenes, attributes, and spatial relationships; a bundled D3.js viewer then renders the committed result as a read-only static graph.
+This example treats sixteen robot-camera observations as a compact scene memory. It is not a training dataset or behavior model. `opengraph-image` extracts objects, scenes, attributes, and spatial relationships; a bundled D3.js viewer then renders the committed result as a read-only static graph.
 
 ## Snapshot
 
-- 65 nodes and 148 directed relationships
-- 8 BridgeData V2 observations from four cloth-manipulation trajectories
+- 127 nodes and 323 directed relationships
+- 16 BridgeData V2 observations from four cloth-manipulation trajectories
 - Shared concepts for recurring entities such as `yellow_cloth`, `robot_gripper`, and `toy_tomato`
 - Fixed, seeded node positions; the browser never runs a force simulation or mutates graph data
 - No API key, model call, backend, or third-party CDN is required to view `graph.html`
