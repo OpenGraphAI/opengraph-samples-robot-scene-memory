@@ -26,11 +26,12 @@ SOURCE = (ROOT / "source").resolve()
 GRAPH_JSON = ROOT / "graph.json"
 GRAPH_HTML = ROOT / "graph.html"
 TEMPLATE = ROOT / "graph.template.html"
-D3_SOURCE = ROOT / "vendor" / "d3.v7.min.js"
+CYTOSCAPE_SOURCE = ROOT / "vendor" / "cytoscape.min.js"
 NODE_TYPES = {"image", "object", "scene", "attribute", "text_span"}
 SNAKE_CASE = re.compile(r"^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$")
 LOCAL_PATH = re.compile(r"(?:[a-zA-Z]:[\\/]|/(?:Users|home)/)")
 GENERATOR_VERSION = "0.1.2"
+CYTOSCAPE_VERSION = "3.34.3"
 SPATIAL_RELATIONS = {"next_to", "holding", "wearing", "on_top_of", "inside", "behind", "in_front_of"}
 OBJECT_ALIASES = {
     "yellow_cloth": {"yellow_cloth", "microfiber_cloth", "yellow_microfiber_cloth", "yellow_towel"},
@@ -193,6 +194,11 @@ def prepare_graph(data: dict) -> dict:
         "version": GENERATOR_VERSION,
         "model": "claude-sonnet-4-6",
     }
+    data["graph"]["renderer"] = {
+        "library": "cytoscape",
+        "version": CYTOSCAPE_VERSION,
+        "layout": "preset",
+    }
     return data
 
 
@@ -296,12 +302,22 @@ def validate_graph(data: dict) -> tuple[int, int]:
 
 def render_html(data: dict) -> str:
     template = TEMPLATE.read_text(encoding="utf-8")
-    d3_source = D3_SOURCE.read_text(encoding="utf-8").replace("</script", "<\\/script")
+    cytoscape_source = CYTOSCAPE_SOURCE.read_text(encoding="utf-8").replace("</script", "<\\/script")
+    if CYTOSCAPE_VERSION not in cytoscape_source:
+        raise ValueError(f"The vendored Cytoscape.js bundle is not version {CYTOSCAPE_VERSION}")
     graph_data = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     graph_data = graph_data.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
-    if template.count("/*__D3_SOURCE__*/") != 1 or template.count("__GRAPH_DATA__") != 1:
-        raise ValueError("graph.template.html has invalid replacement markers")
-    return template.replace("/*__D3_SOURCE__*/", d3_source).replace("__GRAPH_DATA__", graph_data)
+    replacements = {
+        "/*__CYTOSCAPE_SOURCE__*/": cytoscape_source,
+        "__GRAPH_DATA__": graph_data,
+        "__NODE_COUNT__": str(len(data["nodes"])),
+        "__EDGE_COUNT__": str(len(data["edges"])),
+    }
+    for marker, replacement in replacements.items():
+        if template.count(marker) != 1:
+            raise ValueError(f"graph.template.html has an invalid replacement marker: {marker}")
+        template = template.replace(marker, replacement)
+    return template
 
 
 def write_atomic(path: Path, contents: str) -> None:
@@ -313,15 +329,19 @@ def write_atomic(path: Path, contents: str) -> None:
 def validate_html() -> None:
     html = GRAPH_HTML.read_text(encoding="utf-8")
     template = TEMPLATE.read_text(encoding="utf-8")
-    if "/*__D3_SOURCE__*/" in html or "__GRAPH_DATA__" in html:
+    expected = render_html(json.loads(GRAPH_JSON.read_text(encoding="utf-8")))
+    if html != expected:
+        raise ValueError("graph.html is not in sync with graph.json, the template, and the vendored renderer")
+    if any(marker in html for marker in ("/*__CYTOSCAPE_SOURCE__*/", "__GRAPH_DATA__", "__NODE_COUNT__", "__EDGE_COUNT__")):
         raise ValueError("graph.html contains an unreplaced template marker")
-    if "https://cdn" in html:
-        raise ValueError("graph.html must not depend on a D3 CDN")
-    if "d3.drag" in html:
-        raise ValueError("The read-only viewer must not enable node dragging")
-    for forbidden in ("forceSimulation", "contenteditable", "innerHTML"):
+    if re.search(r"<script[^>]+\\bsrc=", html, re.IGNORECASE):
+        raise ValueError("graph.html must not load a runtime script")
+    for forbidden in ("d3.", "forceSimulation", "contenteditable", "innerHTML", "cy.add(", "cy.remove(", "cy.unlock("):
         if forbidden in template:
             raise ValueError(f"The read-only viewer template must not use {forbidden}")
+    for required in ('layout: { name: "preset" }', "autolock: true", "autoungrabify: true", "boxSelectionEnabled: false"):
+        if required not in template:
+            raise ValueError(f"The Cytoscape viewer is missing its read-only contract: {required}")
     for required in ('<meta name="description"', 'rel="canonical"', 'rel="icon"'):
         if required not in html:
             raise ValueError(f"graph.html is missing required metadata: {required}")

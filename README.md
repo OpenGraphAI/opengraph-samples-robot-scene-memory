@@ -4,7 +4,7 @@ A static gallery showing how [OpenGraph AI](https://github.com/OpenGraphAI/openg
 
 ## Status
 
-The first example is built from 16 attributed BridgeData V2 observations. Its 127-node, 323-edge graph is read-only and explorable; `opengraph-image` produced the source graph offline and D3.js renders its fixed positions in the browser.
+The first example is built from 16 attributed BridgeData V2 observations. Its 127-node, 323-edge graph is read-only and explorable; `opengraph-image` produced the source graph offline and Cytoscape.js renders its fixed positions in the browser.
 
 **Live demo:** [opengraphai.github.io/opengraph-samples-robot-scene-memory](https://opengraphai.github.io/opengraph-samples-robot-scene-memory/)
 
@@ -12,7 +12,7 @@ The first example is built from 16 attributed BridgeData V2 observations. Its 12
 
 - Visual objects and spatial relationships represented as a knowledge graph
 - Recurring scene entities linked across robot-camera observations
-- A static D3.js gallery that requires no account, API key, or runtime service
+- A static Cytoscape.js gallery that requires no account, API key, or runtime service
 
 See the [OpenGraph AI repository](https://github.com/OpenGraphAI/opengraph-ai) for the graph-building tools and MCP integration.
 
@@ -22,7 +22,7 @@ The landing page includes copy-ready Claude Desktop and Cursor configurations fo
 
 - `opengraph-image` produces the graph data offline from selected observations.
 - The gallery ships a fixed graph snapshot and precomputed node positions.
-- D3.js renders a read-only viewer with zoom, pan, filtering, and inspection. Visitors cannot move, add, edit, or delete graph data.
+- Cytoscape.js renders a read-only viewer with zoom, pan, filtering, and inspection. Visitors cannot move, add, edit, or delete graph data.
 - Additional conversations can produce a newer graph snapshot through the MCP workflow; the GitHub Pages gallery itself has no model, API key, or server runtime.
 
 ## Data source

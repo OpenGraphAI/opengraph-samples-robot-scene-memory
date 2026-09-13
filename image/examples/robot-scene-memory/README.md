@@ -1,6 +1,6 @@
 # Robot Scene Memory graph
 
-This example treats sixteen robot-camera observations as a compact scene memory. It is not a training dataset or behavior model. `opengraph-image` extracts objects, scenes, attributes, and spatial relationships; a bundled D3.js viewer then renders the committed result as a read-only static graph.
+This example treats sixteen robot-camera observations as a compact scene memory. It is not a training dataset or behavior model. `opengraph-image` extracts objects, scenes, attributes, and spatial relationships; a bundled Cytoscape.js viewer then renders the committed result as a read-only static graph.
 
 ## Snapshot
 
@@ -28,7 +28,7 @@ Put an Anthropic API key in the local `.env` file and run:
 
 The script calls `opengraph-image==0.1.2` with its `claude-sonnet-4-6` extractor, normalizes and validates the result, merges a documented set of obvious label aliases, removes noisy OCR nodes, computes seeded fixed positions, and writes `graph.json` plus the self-contained `graph.html`. Model extraction is reproducible as a procedure but is not guaranteed to be byte-for-byte deterministic.
 
-To rebuild only the D3 artifact from the committed graph, or validate without a model call:
+To rebuild only the Cytoscape.js artifact from the committed graph, or validate without a model call:
 
 ```powershell
 .venv\Scripts\python.exe regenerate.py --render-only
@@ -39,4 +39,4 @@ The `.env` file is ignored by Git. Do not commit API keys.
 
 ## Data and licenses
 
-The selected images come from [BridgeData V2](https://rail-berkeley.github.io/bridgedata/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [`source/README.md`](source/README.md) for exact URLs and SHA-256 checksums. D3.js 7.9.0 and its BSD-3-Clause license are included under `vendor/` so the gallery has no runtime network dependency.
+The selected images come from [BridgeData V2](https://rail-berkeley.github.io/bridgedata/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [`source/README.md`](source/README.md) for exact URLs and SHA-256 checksums. Cytoscape.js 3.34.3 and its MIT license are included under `vendor/` so the gallery has no runtime network dependency.
