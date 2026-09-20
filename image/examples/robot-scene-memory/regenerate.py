@@ -338,10 +338,10 @@ def validate_html() -> None:
         raise ValueError("graph.html must not load a runtime script")
     for forbidden in ("d3.", "forceSimulation", "contenteditable", "innerHTML", "cy.add(", "cy.remove(", "cy.unlock("):
         if forbidden in template:
-            raise ValueError(f"The read-only viewer template must not use {forbidden}")
-    for required in ('layout: { name: "preset" }', "autolock: true", "autoungrabify: true", "boxSelectionEnabled: false"):
+            raise ValueError(f"The topology-preserving viewer template must not use {forbidden}")
+    for required in ('layout: { name: "preset" }', "autolock: false", "autoungrabify: false", "initialPositions", "boxSelectionEnabled: false"):
         if required not in template:
-            raise ValueError(f"The Cytoscape viewer is missing its read-only contract: {required}")
+            raise ValueError(f"The Cytoscape viewer is missing its draggable-view contract: {required}")
     for required in ('<meta name="description"', 'rel="canonical"', 'rel="icon"'):
         if required not in html:
             raise ValueError(f"graph.html is missing required metadata: {required}")
