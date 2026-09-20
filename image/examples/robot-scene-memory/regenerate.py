@@ -160,7 +160,7 @@ def add_fixed_layout(data: dict) -> None:
         graph,
         seed=42,
         iterations=250,
-        k=1.7 / math.sqrt(max(len(data["nodes"]), 1)),
+        k=2.3 / math.sqrt(max(len(data["nodes"]), 1)),
     )
     x_values = [float(position[0]) for position in positions.values()]
     y_values = [float(position[1]) for position in positions.values()]
@@ -175,7 +175,7 @@ def add_fixed_layout(data: dict) -> None:
         node["y"] = round(70 + (float(y) - y_min) / y_span * (height - 140), 2)
 
     data.setdefault("graph", {})["layout"] = {
-        "algorithm": "spring_seed_42_v1",
+        "algorithm": "spring_seed_42_v2",
         "width": width,
         "height": height,
     }

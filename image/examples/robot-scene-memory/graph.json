@@ -3,7 +3,7 @@
   "multigraph": true,
   "graph": {
     "layout": {
-      "algorithm": "spring_seed_42_v1",
+      "algorithm": "spring_seed_42_v2",
       "width": 1440,
       "height": 900
     },
@@ -30,8 +30,8 @@
         "fold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0",
-      "x": 695.28,
-      "y": 563.94
+      "x": 507.91,
+      "y": 509.17
     },
     {
       "type": "attribute",
@@ -57,8 +57,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0_attr_clip_color",
-      "x": 855.97,
-      "y": 440.17
+      "x": 573.26,
+      "y": 509.79
     },
     {
       "type": "attribute",
@@ -74,8 +74,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "fold_cloth_mid_view_0_attr_clip_material",
-      "x": 694.42,
-      "y": 416.64
+      "x": 665.54,
+      "y": 432.85
     },
     {
       "type": "attribute",
@@ -101,8 +101,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_0_attr_cloth_color",
-      "x": 685.27,
-      "y": 328.43
+      "x": 735.25,
+      "y": 417.33
     },
     {
       "type": "attribute",
@@ -121,8 +121,8 @@
         "fold_cloth_view_0"
       ],
       "id": "fold_cloth_mid_view_0_attr_cloth_size",
-      "x": 877.18,
-      "y": 263.27
+      "x": 852.74,
+      "y": 464.64
     },
     {
       "type": "attribute",
@@ -139,8 +139,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "fold_cloth_mid_view_0_attr_image_lighting",
-      "x": 769.57,
-      "y": 486.14
+      "x": 642.6,
+      "y": 501.78
     },
     {
       "type": "attribute",
@@ -151,8 +151,8 @@
         "fold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0_attr_image_mood",
-      "x": 693.09,
-      "y": 756.65
+      "x": 367.22,
+      "y": 668.0
     },
     {
       "type": "attribute",
@@ -165,8 +165,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0_attr_image_style",
-      "x": 541.82,
-      "y": 634.55
+      "x": 307.34,
+      "y": 502.22
     },
     {
       "type": "object",
@@ -182,8 +182,8 @@
         "fold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0_control_panel_1",
-      "x": 634.89,
-      "y": 754.51
+      "x": 320.43,
+      "y": 645.02
     },
     {
       "type": "object",
@@ -201,8 +201,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "fold_cloth_mid_view_0_plastic_clip_1",
-      "x": 779.98,
-      "y": 515.46
+      "x": 662.46,
+      "y": 530.6
     },
     {
       "type": "scene",
@@ -219,8 +219,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_0_scene_indoor_other",
-      "x": 798.6,
-      "y": 445.32
+      "x": 663.68,
+      "y": 403.25
     },
     {
       "type": "object",
@@ -236,8 +236,8 @@
         "fold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_0_toy_chocolate_bar_1",
-      "x": 630.61,
-      "y": 604.74
+      "x": 495.22,
+      "y": 484.44
     },
     {
       "type": "image",
@@ -249,8 +249,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_1",
-      "x": 746.03,
-      "y": 288.37
+      "x": 634.9,
+      "y": 264.77
     },
     {
       "type": "attribute",
@@ -263,8 +263,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_1_attr_lighting_natural",
-      "x": 568.93,
-      "y": 253.44
+      "x": 493.12,
+      "y": 234.76
     },
     {
       "type": "attribute",
@@ -275,8 +275,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_1_attr_mood_technical",
-      "x": 803.24,
-      "y": 104.07
+      "x": 647.65,
+      "y": 79.37
     },
     {
       "type": "attribute",
@@ -287,8 +287,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_1_attr_polishing_pad_color",
-      "x": 453.65,
-      "y": 212.45
+      "x": 828.16,
+      "y": 179.57
     },
     {
       "type": "attribute",
@@ -304,8 +304,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "fold_cloth_mid_view_1_attr_robotic_arm_material",
-      "x": 668.68,
-      "y": 250.59
+      "x": 451.03,
+      "y": 381.28
     },
     {
       "type": "attribute",
@@ -316,8 +316,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_1_attr_style_workshop",
-      "x": 860.6,
-      "y": 115.79
+      "x": 710.71,
+      "y": 86.3
     },
     {
       "type": "object",
@@ -333,8 +333,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "fold_cloth_mid_view_1_cable_1",
-      "x": 776.33,
-      "y": 204.86
+      "x": 677.62,
+      "y": 197.74
     },
     {
       "type": "image",
@@ -346,8 +346,8 @@
         "fold_cloth_view_0"
       ],
       "id": "fold_cloth_view_0",
-      "x": 605.88,
-      "y": 487.28
+      "x": 503.75,
+      "y": 441.27
     },
     {
       "type": "attribute",
@@ -358,8 +358,8 @@
         "fold_cloth_view_0"
       ],
       "id": "fold_cloth_view_0_attr_style_overall",
-      "x": 444.42,
-      "y": 642.88
+      "x": 280.26,
+      "y": 553.22
     },
     {
       "type": "object",
@@ -375,8 +375,8 @@
         "fold_cloth_view_0"
       ],
       "id": "fold_cloth_view_0_chair_1",
-      "x": 416.2,
-      "y": 419.39
+      "x": 301.34,
+      "y": 387.34
     },
     {
       "type": "object",
@@ -397,8 +397,8 @@
         "fold_cloth_view_1"
       ],
       "id": "fold_cloth_view_0_electronic_device_1",
-      "x": 723.57,
-      "y": 552.04
+      "x": 628.72,
+      "y": 518.83
     },
     {
       "type": "image",
@@ -410,8 +410,8 @@
         "fold_cloth_view_1"
       ],
       "id": "fold_cloth_view_1",
-      "x": 702.61,
-      "y": 477.98
+      "x": 683.96,
+      "y": 454.33
     },
     {
       "type": "attribute",
@@ -422,8 +422,8 @@
         "fold_cloth_view_1"
       ],
       "id": "fold_cloth_view_1_attr_cloth_style",
-      "x": 994.91,
-      "y": 323.29
+      "x": 769.02,
+      "y": 609.74
     },
     {
       "type": "attribute",
@@ -434,8 +434,8 @@
         "fold_cloth_view_1"
       ],
       "id": "fold_cloth_view_1_attr_mood",
-      "x": 694.01,
-      "y": 668.85
+      "x": 878.85,
+      "y": 576.46
     },
     {
       "type": "attribute",
@@ -458,8 +458,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "fold_cloth_view_1_attr_table_color",
-      "x": 408.16,
-      "y": 587.31
+      "x": 512.73,
+      "y": 194.99
     },
     {
       "type": "object",
@@ -476,8 +476,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "fold_cloth_view_1_metal_clamp_1",
-      "x": 723.86,
-      "y": 346.96
+      "x": 552.54,
+      "y": 411.4
     },
     {
       "type": "image",
@@ -489,8 +489,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_mid_view_0",
-      "x": 579.72,
-      "y": 513.87
+      "x": 451.77,
+      "y": 458.5
     },
     {
       "type": "attribute",
@@ -501,8 +501,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_mid_view_0_attr_electronic_color",
-      "x": 773.52,
-      "y": 736.55
+      "x": 737.32,
+      "y": 691.26
     },
     {
       "type": "attribute",
@@ -513,8 +513,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_mid_view_0_attr_lighting_natural",
-      "x": 374.8,
-      "y": 644.76
+      "x": 205.83,
+      "y": 546.97
     },
     {
       "type": "object",
@@ -530,8 +530,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_mid_view_0_cylindrical_object_1",
-      "x": 537.6,
-      "y": 470.38
+      "x": 439.51,
+      "y": 567.68
     },
     {
       "type": "object",
@@ -547,8 +547,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_mid_view_0_toy_banana_slice_1",
-      "x": 467.58,
-      "y": 574.61
+      "x": 319.47,
+      "y": 441.22
     },
     {
       "type": "image",
@@ -560,8 +560,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1",
-      "x": 517.92,
-      "y": 553.4
+      "x": 346.4,
+      "y": 395.33
     },
     {
       "type": "attribute",
@@ -573,8 +573,8 @@
         "move_cloth_top_view_0"
       ],
       "id": "move_cloth_top_mid_view_1_attr_cloth_material",
-      "x": 1018.21,
-      "y": 480.97
+      "x": 589.99,
+      "y": 636.0
     },
     {
       "type": "attribute",
@@ -586,8 +586,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "move_cloth_top_mid_view_1_attr_gripper_material",
-      "x": 733.18,
-      "y": 173.55
+      "x": 789.55,
+      "y": 207.59
     },
     {
       "type": "attribute",
@@ -598,8 +598,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_attr_img_lighting",
-      "x": 292.58,
-      "y": 664.44
+      "x": 80.0,
+      "y": 384.23
     },
     {
       "type": "attribute",
@@ -610,8 +610,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_attr_img_mood",
-      "x": 344.19,
-      "y": 704.03
+      "x": 84.33,
+      "y": 427.62
     },
     {
       "type": "attribute",
@@ -623,8 +623,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_attr_sponge_color",
-      "x": 341.17,
-      "y": 387.46
+      "x": 524.72,
+      "y": 169.78
     },
     {
       "type": "attribute",
@@ -635,8 +635,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_attr_sponge_material",
-      "x": 80.0,
-      "y": 526.51
+      "x": 191.1,
+      "y": 95.17
     },
     {
       "type": "attribute",
@@ -647,8 +647,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_attr_table_material",
-      "x": 338.58,
-      "y": 456.33
+      "x": 456.63,
+      "y": 186.23
     },
     {
       "type": "object",
@@ -664,8 +664,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_black_cylinders_1",
-      "x": 612.08,
-      "y": 572.16
+      "x": 359.26,
+      "y": 503.28
     },
     {
       "type": "object",
@@ -681,8 +681,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_black_device_1",
-      "x": 519.33,
-      "y": 688.09
+      "x": 210.36,
+      "y": 427.55
     },
     {
       "type": "object",
@@ -699,8 +699,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_power_strip_1",
-      "x": 673.36,
-      "y": 575.66
+      "x": 443.38,
+      "y": 409.83
     },
     {
       "type": "scene",
@@ -717,8 +717,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_scene_indoor_commercial",
-      "x": 600.33,
-      "y": 456.02
+      "x": 428.42,
+      "y": 429.87
     },
     {
       "type": "object",
@@ -734,8 +734,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_striped_sponge_1",
-      "x": 324.48,
-      "y": 497.67
+      "x": 351.9,
+      "y": 231.5
     },
     {
       "type": "object",
@@ -751,8 +751,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_toy_ball_1",
-      "x": 449.6,
-      "y": 495.67
+      "x": 432.82,
+      "y": 291.58
     },
     {
       "type": "object",
@@ -783,8 +783,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_mid_view_1_wooden_table_1",
-      "x": 617.82,
-      "y": 464.29
+      "x": 535.47,
+      "y": 372.35
     },
     {
       "type": "image",
@@ -796,8 +796,8 @@
         "move_cloth_top_view_0"
       ],
       "id": "move_cloth_top_view_0",
-      "x": 726.28,
-      "y": 384.38
+      "x": 501.27,
+      "y": 413.3
     },
     {
       "type": "attribute",
@@ -812,8 +812,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "move_cloth_top_view_0_attr_chair_color",
-      "x": 307.76,
-      "y": 343.76
+      "x": 169.8,
+      "y": 324.36
     },
     {
       "type": "attribute",
@@ -825,8 +825,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "move_cloth_top_view_0_attr_lighting",
-      "x": 634.71,
-      "y": 224.93
+      "x": 343.81,
+      "y": 310.3
     },
     {
       "type": "attribute",
@@ -838,8 +838,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_0_attr_style",
-      "x": 926.88,
-      "y": 487.3
+      "x": 374.8,
+      "y": 561.81
     },
     {
       "type": "attribute",
@@ -850,8 +850,8 @@
         "move_cloth_top_view_0"
       ],
       "id": "move_cloth_top_view_0_attr_table_color",
-      "x": 366.05,
-      "y": 501.08
+      "x": 407.43,
+      "y": 201.83
     },
     {
       "type": "attribute",
@@ -876,8 +876,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "move_cloth_top_view_0_attr_table_material",
-      "x": 380.33,
-      "y": 558.78
+      "x": 261.25,
+      "y": 340.3
     },
     {
       "type": "object",
@@ -895,8 +895,8 @@
         "tomato_on_cloth_view_0"
       ],
       "id": "move_cloth_top_view_0_blue_chair_1",
-      "x": 496.61,
-      "y": 397.31
+      "x": 343.34,
+      "y": 373.35
     },
     {
       "type": "object",
@@ -912,8 +912,8 @@
         "move_cloth_top_view_0"
       ],
       "id": "move_cloth_top_view_0_toolbox_1",
-      "x": 811.47,
-      "y": 420.59
+      "x": 439.98,
+      "y": 496.69
     },
     {
       "type": "image",
@@ -925,8 +925,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1",
-      "x": 838.4,
-      "y": 555.43
+      "x": 511.92,
+      "y": 564.16
     },
     {
       "type": "attribute",
@@ -937,8 +937,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_attr_handle_material",
-      "x": 1268.08,
-      "y": 552.75
+      "x": 584.08,
+      "y": 830.0
     },
     {
       "type": "attribute",
@@ -949,8 +949,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_attr_roll_color",
-      "x": 1000.08,
-      "y": 772.31
+      "x": 674.5,
+      "y": 750.51
     },
     {
       "type": "object",
@@ -966,8 +966,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_black_handle_1",
-      "x": 1019.89,
-      "y": 510.39
+      "x": 575.85,
+      "y": 656.89
     },
     {
       "type": "object",
@@ -983,8 +983,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_black_mug_1",
-      "x": 917.53,
-      "y": 532.42
+      "x": 531.65,
+      "y": 599.26
     },
     {
       "type": "object",
@@ -1000,8 +1000,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_black_power_strip_1",
-      "x": 997.09,
-      "y": 554.72
+      "x": 512.31,
+      "y": 657.15
     },
     {
       "type": "object",
@@ -1017,8 +1017,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_dark_container_1",
-      "x": 961.71,
-      "y": 715.75
+      "x": 400.3,
+      "y": 732.55
     },
     {
       "type": "object",
@@ -1034,8 +1034,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_dark_mug_2",
-      "x": 1009.36,
-      "y": 699.65
+      "x": 461.57,
+      "y": 744.22
     },
     {
       "type": "object",
@@ -1051,8 +1051,8 @@
         "move_cloth_top_view_1"
       ],
       "id": "move_cloth_top_view_1_toy_striped_roll_1",
-      "x": 815.98,
-      "y": 629.42
+      "x": 607.33,
+      "y": 573.07
     },
     {
       "id": "shared_cloth_clip",
@@ -1063,8 +1063,8 @@
         "fold_cloth_mid_view_1",
         "move_cloth_top_view_0"
       ],
-      "x": 862.47,
-      "y": 327.9
+      "x": 594.3,
+      "y": 389.76
     },
     {
       "id": "shared_robot_gripper",
@@ -1087,8 +1087,8 @@
         "unfold_cloth_view_0",
         "unfold_cloth_view_1"
       ],
-      "x": 701.91,
-      "y": 369.25
+      "x": 631.37,
+      "y": 350.68
     },
     {
       "id": "shared_sandwich_toy",
@@ -1103,8 +1103,8 @@
         "tomato_on_cloth_mid_view_1",
         "tomato_on_cloth_view_1"
       ],
-      "x": 617.8,
-      "y": 365.79
+      "x": 661.09,
+      "y": 334.14
     },
     {
       "id": "shared_toy_banana",
@@ -1122,8 +1122,8 @@
         "unfold_cloth_mid_view_0",
         "unfold_cloth_view_0"
       ],
-      "x": 710.83,
-      "y": 451.1
+      "x": 574.26,
+      "y": 442.95
     },
     {
       "id": "shared_toy_strawberry",
@@ -1140,8 +1140,8 @@
         "unfold_cloth_view_0",
         "unfold_cloth_view_1"
       ],
-      "x": 715.71,
-      "y": 497.41
+      "x": 625.17,
+      "y": 426.49
     },
     {
       "id": "shared_toy_tomato",
@@ -1151,8 +1151,8 @@
       "seen_in": [
         "tomato_on_cloth_view_0"
       ],
-      "x": 569.7,
-      "y": 425.39
+      "x": 566.0,
+      "y": 352.63
     },
     {
       "id": "shared_yellow_cloth",
@@ -1176,8 +1176,8 @@
         "unfold_cloth_mid_view_1",
         "unfold_cloth_view_1"
       ],
-      "x": 764.13,
-      "y": 426.69
+      "x": 599.5,
+      "y": 463.95
     },
     {
       "type": "image",
@@ -1189,8 +1189,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0",
-      "x": 594.85,
-      "y": 312.91
+      "x": 463.92,
+      "y": 316.47
     },
     {
       "type": "attribute",
@@ -1212,8 +1212,8 @@
         "move_cloth_top_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0_attr_cloth_material",
-      "x": 1027.91,
-      "y": 362.59
+      "x": 669.92,
+      "y": 642.28
     },
     {
       "type": "attribute",
@@ -1224,8 +1224,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0_attr_robot_color",
-      "x": 678.62,
-      "y": 170.33
+      "x": 738.58,
+      "y": 176.31
     },
     {
       "type": "attribute",
@@ -1236,8 +1236,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0_attr_style",
-      "x": 459.17,
-      "y": 140.17
+      "x": 326.05,
+      "y": 145.06
     },
     {
       "type": "object",
@@ -1254,8 +1254,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0_blue_panel_1",
-      "x": 403.76,
-      "y": 322.06
+      "x": 304.27,
+      "y": 268.58
     },
     {
       "type": "object",
@@ -1271,8 +1271,8 @@
         "tomato_on_cloth_mid_view_0"
       ],
       "id": "tomato_on_cloth_mid_view_0_yellow_object_1",
-      "x": 468.69,
-      "y": 330.2
+      "x": 430.02,
+      "y": 237.51
     },
     {
       "type": "image",
@@ -1284,8 +1284,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "tomato_on_cloth_mid_view_1",
-      "x": 664.0,
-      "y": 497.44
+      "x": 566.17,
+      "y": 478.78
     },
     {
       "type": "attribute",
@@ -1296,8 +1296,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "tomato_on_cloth_mid_view_1_attr_image_style",
-      "x": 595.14,
-      "y": 683.22
+      "x": 454.6,
+      "y": 645.59
     },
     {
       "type": "attribute",
@@ -1308,8 +1308,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "tomato_on_cloth_mid_view_1_attr_pad_color",
-      "x": 509.79,
-      "y": 185.88
+      "x": 867.09,
+      "y": 214.11
     },
     {
       "type": "object",
@@ -1325,8 +1325,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "tomato_on_cloth_mid_view_1_yellow_banana_1",
-      "x": 638.91,
-      "y": 396.98
+      "x": 659.15,
+      "y": 474.91
     },
     {
       "type": "image",
@@ -1338,8 +1338,8 @@
         "tomato_on_cloth_view_0"
       ],
       "id": "tomato_on_cloth_view_0",
-      "x": 571.7,
-      "y": 352.22
+      "x": 433.76,
+      "y": 357.26
     },
     {
       "type": "attribute",
@@ -1350,8 +1350,8 @@
         "tomato_on_cloth_view_0"
       ],
       "id": "tomato_on_cloth_view_0_attr_style_workspace",
-      "x": 367.7,
-      "y": 222.5
+      "x": 184.06,
+      "y": 273.25
     },
     {
       "type": "attribute",
@@ -1365,8 +1365,8 @@
         "move_cloth_top_mid_view_1"
       ],
       "id": "tomato_on_cloth_view_0_attr_tomato_color",
-      "x": 503.45,
-      "y": 517.94
+      "x": 552.46,
+      "y": 285.53
     },
     {
       "type": "attribute",
@@ -1380,8 +1380,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "tomato_on_cloth_view_0_attr_tomato_size",
-      "x": 625.83,
-      "y": 428.4
+      "x": 598.82,
+      "y": 328.48
     },
     {
       "type": "object",
@@ -1397,8 +1397,8 @@
         "tomato_on_cloth_view_0"
       ],
       "id": "tomato_on_cloth_view_0_control_box",
-      "x": 432.32,
-      "y": 370.24
+      "x": 318.77,
+      "y": 330.02
     },
     {
       "type": "object",
@@ -1414,8 +1414,8 @@
         "tomato_on_cloth_view_0"
       ],
       "id": "tomato_on_cloth_view_0_magnetic_clip_1",
-      "x": 737.16,
-      "y": 316.76
+      "x": 422.58,
+      "y": 467.57
     },
     {
       "type": "image",
@@ -1427,8 +1427,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "tomato_on_cloth_view_1",
-      "x": 804.37,
-      "y": 384.47
+      "x": 721.04,
+      "y": 443.2
     },
     {
       "type": "attribute",
@@ -1439,8 +1439,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "tomato_on_cloth_view_1_attr_style_scene",
-      "x": 1005.81,
-      "y": 254.71
+      "x": 954.7,
+      "y": 506.53
     },
     {
       "type": "attribute",
@@ -1459,8 +1459,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "tomato_on_cloth_view_1_attr_tomato_color",
-      "x": 901.52,
-      "y": 410.81
+      "x": 801.37,
+      "y": 321.31
     },
     {
       "type": "object",
@@ -1476,8 +1476,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "tomato_on_cloth_view_1_black_clip_1",
-      "x": 944.95,
-      "y": 373.6
+      "x": 715.17,
+      "y": 554.53
     },
     {
       "type": "object",
@@ -1493,8 +1493,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "tomato_on_cloth_view_1_red_tomato_1",
-      "x": 821.58,
-      "y": 353.44
+      "x": 750.3,
+      "y": 371.41
     },
     {
       "type": "image",
@@ -1506,8 +1506,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_mid_view_0",
-      "x": 564.55,
-      "y": 384.48
+      "x": 502.95,
+      "y": 323.4
     },
     {
       "type": "attribute",
@@ -1518,8 +1518,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_mid_view_0_attr_blue_panel_color",
-      "x": 183.87,
-      "y": 229.71
+      "x": 90.93,
+      "y": 173.5
     },
     {
       "type": "attribute",
@@ -1530,8 +1530,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_mid_view_0_attr_style_robotics_lab",
-      "x": 289.39,
-      "y": 319.71
+      "x": 331.62,
+      "y": 176.17
     },
     {
       "type": "object",
@@ -1547,8 +1547,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_mid_view_0_robotic_controller_box_1",
-      "x": 523.2,
-      "y": 276.09
+      "x": 585.76,
+      "y": 218.91
     },
     {
       "type": "object",
@@ -1564,8 +1564,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_mid_view_0_toy_cookie_1",
-      "x": 421.99,
-      "y": 439.78
+      "x": 400.63,
+      "y": 261.69
     },
     {
       "type": "image",
@@ -1577,8 +1577,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1",
-      "x": 836.18,
-      "y": 503.1
+      "x": 708.95,
+      "y": 347.2
     },
     {
       "type": "attribute",
@@ -1589,8 +1589,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_attr_hotdog_color",
-      "x": 1195.87,
-      "y": 448.56
+      "x": 870.76,
+      "y": 70.0
     },
     {
       "type": "attribute",
@@ -1601,8 +1601,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_attr_lighting_indoor",
-      "x": 1088.04,
-      "y": 576.64
+      "x": 936.23,
+      "y": 248.99
     },
     {
       "type": "attribute",
@@ -1616,8 +1616,8 @@
         "fold_cloth_view_0"
       ],
       "id": "unfold_cloth_mid_view_1_attr_mood_functional",
-      "x": 634.97,
-      "y": 520.17
+      "x": 512.12,
+      "y": 361.29
     },
     {
       "type": "attribute",
@@ -1629,8 +1629,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_attr_style_lab",
-      "x": 971.94,
-      "y": 614.41
+      "x": 919.93,
+      "y": 388.78
     },
     {
       "type": "object",
@@ -1646,8 +1646,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_black_cable_1",
-      "x": 844.23,
-      "y": 472.31
+      "x": 805.7,
+      "y": 270.54
     },
     {
       "type": "object",
@@ -1663,8 +1663,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_gripper_clip_1",
-      "x": 970.38,
-      "y": 455.07
+      "x": 733.45,
+      "y": 492.08
     },
     {
       "type": "object",
@@ -1681,8 +1681,8 @@
         "fold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_red_bell_pepper_1",
-      "x": 785.28,
-      "y": 399.98
+      "x": 706.46,
+      "y": 276.81
     },
     {
       "type": "object",
@@ -1698,8 +1698,8 @@
         "unfold_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_mid_view_1_toy_hotdog_1",
-      "x": 930.63,
-      "y": 452.5
+      "x": 734.22,
+      "y": 220.14
     },
     {
       "type": "image",
@@ -1711,8 +1711,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0",
-      "x": 863.43,
-      "y": 370.37
+      "x": 797.95,
+      "y": 410.51
     },
     {
       "type": "attribute",
@@ -1724,7 +1724,7 @@
       ],
       "id": "unfold_cloth_view_0_attr_blue_fabric_color",
       "x": 1360.0,
-      "y": 162.22
+      "y": 453.26
     },
     {
       "type": "attribute",
@@ -1735,8 +1735,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_attr_bread_color",
-      "x": 896.55,
-      "y": 746.87
+      "x": 992.13,
+      "y": 614.23
     },
     {
       "type": "attribute",
@@ -1747,8 +1747,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_attr_cloth_material",
-      "x": 767.65,
-      "y": 71.7
+      "x": 1052.85,
+      "y": 304.8
     },
     {
       "type": "attribute",
@@ -1762,8 +1762,8 @@
         "tomato_on_cloth_view_1"
       ],
       "id": "unfold_cloth_view_0_attr_img_mood",
-      "x": 791.36,
-      "y": 286.55
+      "x": 649.94,
+      "y": 367.27
     },
     {
       "type": "attribute",
@@ -1774,8 +1774,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_attr_img_style",
-      "x": 1098.96,
-      "y": 281.99
+      "x": 1047.83,
+      "y": 424.66
     },
     {
       "type": "attribute",
@@ -1786,8 +1786,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_attr_lego_color",
-      "x": 1054.93,
-      "y": 70.0
+      "x": 1150.29,
+      "y": 229.76
     },
     {
       "type": "object",
@@ -1804,8 +1804,8 @@
         "unfold_cloth_mid_view_0"
       ],
       "id": "unfold_cloth_view_0_black_marker_pen",
-      "x": 764.17,
-      "y": 347.55
+      "x": 690.0,
+      "y": 403.72
     },
     {
       "type": "object",
@@ -1821,8 +1821,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_blue_fabric_background",
-      "x": 1163.13,
-      "y": 244.56
+      "x": 1136.8,
+      "y": 436.74
     },
     {
       "type": "object",
@@ -1838,8 +1838,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_lego_device",
-      "x": 917.12,
-      "y": 216.37
+      "x": 929.46,
+      "y": 304.73
     },
     {
       "type": "object",
@@ -1855,8 +1855,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_toy_bread_slice",
-      "x": 810.35,
-      "y": 570.02
+      "x": 794.86,
+      "y": 493.95
     },
     {
       "type": "object",
@@ -1872,8 +1872,8 @@
         "unfold_cloth_view_0"
       ],
       "id": "unfold_cloth_view_0_yellow_cloth_towel",
-      "x": 751.69,
-      "y": 266.98
+      "x": 810.39,
+      "y": 362.85
     },
     {
       "type": "image",
@@ -1885,8 +1885,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1",
-      "x": 851.04,
-      "y": 544.08
+      "x": 779.4,
+      "y": 458.74
     },
     {
       "type": "attribute",
@@ -1897,8 +1897,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_biscuit_color",
-      "x": 768.46,
-      "y": 830.0
+      "x": 1087.54,
+      "y": 368.65
     },
     {
       "type": "attribute",
@@ -1909,8 +1909,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_cloth_material",
-      "x": 1042.46,
-      "y": 402.67
+      "x": 721.38,
+      "y": 628.64
     },
     {
       "type": "attribute",
@@ -1921,8 +1921,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_gripper_material",
-      "x": 623.3,
-      "y": 175.98
+      "x": 668.48,
+      "y": 163.45
     },
     {
       "type": "attribute",
@@ -1933,8 +1933,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_lighting_warm",
-      "x": 1050.23,
-      "y": 670.9
+      "x": 1001.16,
+      "y": 555.01
     },
     {
       "type": "attribute",
@@ -1945,8 +1945,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_mood_task",
-      "x": 1083.75,
-      "y": 642.73
+      "x": 1029.14,
+      "y": 516.62
     },
     {
       "type": "attribute",
@@ -1958,8 +1958,8 @@
         "tomato_on_cloth_mid_view_1"
       ],
       "id": "unfold_cloth_view_1_attr_table_color",
-      "x": 351.85,
-      "y": 535.48
+      "x": 282.57,
+      "y": 291.31
     },
     {
       "type": "object",
@@ -1975,8 +1975,8 @@
         "unfold_cloth_view_1"
       ],
       "id": "unfold_cloth_view_1_biscuit_toy_1",
-      "x": 740.45,
-      "y": 642.86
+      "x": 833.5,
+      "y": 391.46
     }
   ],
   "edges": [
