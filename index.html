@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#020202">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Robot Scene Memory | OpenGraph AI">
-  <meta property="og:description" content="Explore a read-only scene graph built from robot workspace observations with OpenGraph AI.">
+  <meta property="og:description" content="Explore a draggable scene graph built from robot workspace observations with OpenGraph AI.">
   <meta property="og:url" content="https://opengraphai.github.io/opengraph-samples-robot-scene-memory/">
   <meta property="og:image" content="https://opengraphai.github.io/opengraph-samples-robot-scene-memory/assets/og-preview.png">
   <meta property="og:image:width" content="1200">
@@ -32,6 +32,7 @@
       <nav aria-label="Primary navigation">
         <a href="#example">Example</a>
         <a href="#install">Install MCP</a>
+        <a href="#reference">Reference</a>
         <a class="nav-action" href="https://github.com/OpenGraphAI/opengraph-samples-robot-scene-memory">GitHub</a>
       </nav>
     </div>
@@ -42,7 +43,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span></span> opengraph-image · static gallery</p>
         <h1 id="hero-title">A <em>scene memory</em> for robot workspaces.</h1>
-        <p class="hero-lede">OpenGraph AI turns robot-camera observations into a read-only graph of objects, scenes, attributes, and spatial relationships.</p>
+        <p class="hero-lede">OpenGraph AI turns robot-camera observations into an interactive graph of objects, scenes, attributes, and spatial relationships.</p>
         <div class="actions">
           <a class="button button-primary" href="#example">Explore the example <span aria-hidden="true">↓</span></a>
           <a class="button button-secondary" href="https://github.com/OpenGraphAI/opengraph-samples-robot-scene-memory">View source <span aria-hidden="true">↗</span></a>
@@ -78,7 +79,7 @@
           <div class="card-copy">
             <p class="status"><span></span> Gallery ready</p>
             <h3>Explore recurring objects across robot-camera observations.</h3>
-            <p>The gallery shows a fixed 127-node graph snapshot generated offline with <code>opengraph-image</code>. Cytoscape.js provides read-only zooming, panning, filtering, and inspection in the browser.</p>
+            <p>The gallery shows a fixed 127-node graph snapshot generated offline with <code>opengraph-image</code>. Cytoscape.js lets you drag nodes, zoom, pan, filter, and inspect while keeping every relationship intact.</p>
             <a class="future-link" href="image/examples/robot-scene-memory/graph.html">
               Open graph gallery <span>127 nodes · 323 edges</span>
             </a>
@@ -158,6 +159,37 @@
         </div>
         <p class="config-help">The key is required only when the MCP server extracts or queries a graph with Claude. Viewing this gallery never uses it. If the client cannot find <code>uvx</code>, replace it with the absolute path returned by <code>where uvx</code> on Windows or <code>which uvx</code> on macOS/Linux.</p>
         <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section reference-section" id="reference" aria-labelledby="reference-title">
+      <div class="shell">
+        <p class="section-label">03 · Reference</p>
+        <div class="section-heading">
+          <h2 id="reference-title">Build with OpenGraph AI.</h2>
+          <p>Explore the core project or install the image package directly with pip.</p>
+        </div>
+        <div class="config-grid">
+          <article class="config-card">
+            <div class="config-header">
+              <div>
+                <p class="config-kicker">Source</p>
+                <h3>Core repository</h3>
+              </div>
+            </div>
+            <p class="config-note"><a href="https://github.com/OpenGraphAI/opengraph-ai">github.com/OpenGraphAI/opengraph-ai <span aria-hidden="true">↗</span></a></p>
+          </article>
+          <article class="config-card">
+            <div class="config-header">
+              <div>
+                <p class="config-kicker">Python package</p>
+                <h3>OpenGraph-image</h3>
+              </div>
+              <button class="copy-button" type="button" data-copy="pip-install">Copy</button>
+            </div>
+            <pre><code id="pip-install">pip install OpenGraph-image</code></pre>
+          </article>
+        </div>
       </div>
     </section>
   </main>

@@ -4,7 +4,7 @@ A static gallery showing how [OpenGraph AI](https://github.com/OpenGraphAI/openg
 
 ## Status
 
-The first example is built from 16 attributed BridgeData V2 observations. Its 127-node, 323-edge graph is read-only and explorable; `opengraph-image` produced the source graph offline and Cytoscape.js renders its fixed positions in the browser.
+The first example is built from 16 attributed BridgeData V2 observations. Its 127-node, 323-edge graph is explorable; `opengraph-image` produced the source graph offline and Cytoscape.js lets visitors drag nodes while preserving every relationship.
 
 **Live demo:** [opengraphai.github.io/opengraph-samples-robot-scene-memory](https://opengraphai.github.io/opengraph-samples-robot-scene-memory/)
 
@@ -16,13 +16,15 @@ The first example is built from 16 attributed BridgeData V2 observations. Its 12
 
 See the [OpenGraph AI repository](https://github.com/OpenGraphAI/opengraph-ai) for the graph-building tools and MCP integration.
 
+Install the image package with `pip install OpenGraph-image`.
+
 The landing page includes copy-ready Claude Desktop and Cursor configurations for the pinned `opengraph-image==0.1.2` MCP server. An Anthropic API key is required for local MCP extraction and query calls, but never for the static gallery.
 
 ## Rendering contract
 
 - `opengraph-image` produces the graph data offline from selected observations.
-- The gallery ships a fixed graph snapshot and precomputed node positions.
-- Cytoscape.js renders a read-only viewer with zoom, pan, filtering, and inspection. Visitors cannot move, add, edit, or delete graph data.
+- The gallery ships a fixed graph snapshot and precomputed starting positions.
+- Cytoscape.js provides node dragging, zoom, pan, filtering, and inspection. Dragging changes only the current browser view; visitors cannot add, edit, or delete nodes or relationships.
 - Additional conversations can produce a newer graph snapshot through the MCP workflow; the GitHub Pages gallery itself has no model, API key, or server runtime.
 
 ## Data source

@@ -529,6 +529,10 @@ code {
   color: var(--text);
 }
 
+.reference-section .config-note a {
+  color: var(--gold);
+}
+
 .config-help {
   max-width: 76rem;
   margin: 1.5rem 0 0;
